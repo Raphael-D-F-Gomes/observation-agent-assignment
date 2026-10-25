@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m main *)",
+      "Bash(python3 -m main *)",
+      "Read(corpus/**)",
+      "Read(output/**)",
+      "Write(output/**)"
+    ],
+    "deny": [
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Read(.env)",
+      "Read(**/.env)",
+      "Read(**/*credentials*)",
+      "Read(**/*api_key*)"
+    ]
+  }
+}
